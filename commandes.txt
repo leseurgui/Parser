@@ -5,3 +5,9 @@ javac -cp commons-csv-1.4.jar *.java
 execution (sur Windows c'est un point virgule a la palce de ":") :
 
 java -cp commons-csv-1.4.jar;. Parser synop.2016092109.csv
+
+
+
+MAC : 
+
+clear; javac -cp commons-csv-1.4.jar *.java; java -cp .:commons-csv-1.4.jar Parser synop.2016092109.csv 
