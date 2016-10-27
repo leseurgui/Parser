@@ -1,0 +1,3 @@
+numer_sta,date,pmer,tend,cod_tend,dd,ff,t,td,u,vv,ww,w1,w2,n,nbas,hbas,cl,cm,ch,pres,niv_bar,geop,tend24,tn12,tn24,tx12,tx24,tminsol,sw,tw,raf10,rafper,per,etat_sol,ht_neige,ssfrai,perssfrai,rr1,rr3,rr6,rr12,rr24,phenspe1,phenspe2,phenspe3,phenspe4,nnuage1,ctype1,hnuage1,nnuage2,ctype2,hnuage2,nnuage3,ctype3,hnuage3,nnuage4,ctype4,hnuage4,
+07005,20160921090000,101950,80,2,120,1.900000,288.250000,286.250000,88,9000,1,0,0,10,1,mq,30,23,10,101090,mq,mq,-30,mq,mq,mq,mq,285.350000,mq,mq,3.000000,3.000000,-10,1,0.000000,0.000000,-30,0.000000,0.000000,0.200000,0.400000,0.400000,mq,mq,mq,mq,1,3,3000,mq,mq,mq,mq,mq,mq,mq,mq,mq,
+07015,20160921090000,101970,80,3,150,1.300000,289.550000,285.150000,75,10280,0,mq,mq,100,8,2820,mq,mq,mq,101410,mq,mq,-10,mq,mq,mq,mq,284.
