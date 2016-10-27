@@ -1,5 +1,8 @@
 import java.io.File;
+import java.io.Reader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -28,14 +31,14 @@ public class Parser {
 			System.err.println("Nombre d'arguments incorrect.");
 			return;
 		}
-		CSVParser parser = null;
+		Iterable<CSVRecord> parser = null;
 		try {
-			parser = CSVParser.parse(args[0], CSVFormat.EXCEL.withHeader());
+			Reader fichier = new FileReader(args[0]);
+			parser = CSVFormat.DEFAULT.withDelimiter(';').withHeader().parse(fichier);
 		} catch (IOException e1) {
 			System.err.println("Impossible de lire le fichier.");
 			return;
 		}
-
 		/*
 		 * Etape 1 : récupération d'une instance de la classe
 		 * "DocumentBuilderFactory"
@@ -46,7 +49,7 @@ public class Parser {
 			System.out.println("avant boucle");
 			for (CSVRecord ligne : parser) {
 				temp = ligne.get("tend");
-        System.out.println("fdp");
+        		System.out.println("fdp");
 			}
 			/*
 			 * Etape 2 : création d'un parseur
